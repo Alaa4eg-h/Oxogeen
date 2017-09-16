@@ -1,0 +1,870 @@
+/*
+    Theme Name: Oxyge
+    Them Url: http://www.google.com
+    Auther: Alaa4eg
+    Auther Url: http://www.google.com
+    Description: Onepage Site Templates
+    Version: 1.0
+    */
+
+
+/******************************
+*************Typography**********
+***********************************/
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    background-color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* OverRide Bootsrap */
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+
+
+/******************************
+*************Start Preloader Css********
+*******************************/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #EEE;
+    z-index: 999999;
+}
+
+.preloader i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 56px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: #028fcc;
+}
+
+
+/******************************
+*************End Preloader Css********
+*******************************/
+
+
+/******************************
+*************Header Css********
+*******************************/
+
+#my-header {
+    overflow: hidden;
+    position: relative;
+}
+
+#my-header .item {
+    background-size: cover;
+    width: 100%;
+}
+
+#my-header .item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+#my-header .item .caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 15;
+}
+
+#my-header .item .caption h1 {
+    font-size: 60px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#my-header .item .caption h1 span {
+    color: #028fcc;
+}
+
+#my-header .item .caption p {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#my-header .caption .btn-start {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #EEE;
+    padding: 14px 40px;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+#my-header .caption .btn-start:hover {
+    background-color: #028fcc;
+    border-color: transparent;
+}
+
+#my-header .down-arrow {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    color: #FFF;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    -o-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+#my-header [data-slide='prev'] {
+    left: -150px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#my-header [data-slide='next'] {
+    right: -150px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#my-header:hover [data-slide='prev'] {
+    left: 0;
+}
+
+#my-header:hover [data-slide='next'] {
+    right: 0;
+}
+
+.top-nav {
+    background-color: #028fcc;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.top-nav .navbar-header button {
+    margin-top: 20px;
+}
+
+.top-nav a.navbar-brand {
+    height: auto;
+}
+
+.top-nav ul.navbar-nav li a {
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.top-nav ul .active-link {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav ul.navbar-nav li:hover a {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media Query For Header Section */
+
+@media (max-width: 768px) {
+    #my-header .item .caption h1 {
+        font-size: 42px;
+    }
+    #my-header .item .caption p {
+        font-size: 14px;
+    }
+}
+
+
+/**********************************
+*************End Header Css********
+***********************************/
+
+
+/***********************************
+*************Start Services Css*****
+***********************************/
+
+.services {
+    padding: 90px 0;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.services h2~p {
+    margin-bottom: 60px;
+}
+
+.services .services-type {
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.services .services-type:hover {
+    -webkit-box-shadow: 0px 10px 5px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0px 10px 5px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0px 10px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, .3);
+}
+
+.services .services-type:nth-child(3),
+.services .services-type:nth-child(6) {
+    border-right: none;
+}
+
+.services .services-info h4 {
+    margin-bottom: 20px;
+}
+
+.services .services-icon {
+    width: 90px;
+    padding: 30px 10px;
+    margin: 0px auto 20px auto;
+    color: #FFF;
+    background-color: #028fcc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*********************************
+***********End Services Css*******
+**********************************/
+
+.about-us {
+    padding: 90px 0;
+    background: url(../img/about-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about-us h2 {
+    margin-bottom: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about-us p {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.about-us .progress-bar {
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+/*********************************
+*************End Services Css*****
+*********************************/
+
+
+/*********************************
+        Start Portfolio Css
+*********************************/
+
+.portfolio {
+    padding: 90px 0;
+}
+
+.portfolio h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.portfolio h2~p {
+    margin-bottom: 60px;
+}
+
+.portfolio .gallary {
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio .gallary img {
+    width: 100%;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+.portfolio .gallary:hover img {
+    -webkit-transform: scale(1.6) rotateZ(30deg);
+    -moz-transform: scale(1.6) rotateZ(30deg);
+    -o-transform: scale(1.6) rotateZ(30deg);
+    transform: scale(1.6) rotateZ(30deg);
+}
+
+
+/*********************************
+        End Portfolio Css
+*********************************/
+
+
+/*********************************
+        Start Team Css
+*********************************/
+
+.team {
+    padding: 90px 0;
+}
+
+.team .team-title h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.team .team-title h2~p {
+    margin-bottom: 60px;
+}
+
+.team .team-info img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.team .team-info:hover img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.team .team-info h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.team .team-info h4 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #999;
+}
+
+.team .team-info p {
+    margin-bottom: 15px;
+}
+
+.team .team-info ul {
+    overflow: hidden;
+}
+
+.team .team-info ul li {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #d9d9d9;
+    margin-bottom: 5px;
+}
+
+.team .team-info ul li:last-child {
+    margin-right: 0;
+}
+
+.team .team-info ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.team .team-info:hover ul li:nth-child(1) a {
+    background-color: #3b5999;
+}
+
+.team .team-info:hover ul li:nth-child(2) a {
+    background-color: #55acee;
+}
+
+.team .team-info:hover ul li:nth-child(3) a {
+    background-color: #ea4c89;
+}
+
+.team .team-info:hover ul li:nth-child(4) a {
+    background-color: #0077B5;
+}
+
+.team .team-info:hover ul li:nth-child(5) a {
+    background-color: #f26522;
+}
+
+
+/*********************************
+        End Team Css
+*********************************/
+
+
+/*********************************
+        Start Timer Css
+*********************************/
+
+.timer {
+    padding: 90px 0;
+    background: url(../img/features-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+}
+
+.timer .timer-icon {
+    margin-top: 15px;
+}
+
+.timer .timer-data {
+    margin: 15px 0 30px 0;
+}
+
+
+/*********************************
+        End Timer Css
+*********************************/
+
+
+/*********************************
+        Start Pricing Css
+*********************************/
+
+.price {
+    padding: 90px 0;
+}
+
+.price .price-title h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.price .price-title h2~p {
+    margin-bottom: 60px;
+}
+
+.price .price-table {
+    padding: 40px 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    -webkit-box-shadow: 0 12px 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 12px 10px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0 12px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+.price .featured {
+    background-color: #0077B5;
+    color: #FFF;
+}
+
+.price .featured a {
+    background-color: #FFF;
+    color: #0077B5;
+}
+
+.price .price-table h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.price .price-table h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.price .price-table p {
+    margin-bottom: 20px;
+}
+
+
+/*********************************
+        End Pricing Css
+*********************************/
+
+
+/********************************
+        Start Twitter Css
+*********************************/
+
+.twitter {
+    padding: 90px 0;
+    background: url(../img/twitter-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.twitter .twitter-logo i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #0077B5;
+    border-radius: 50%;
+    color: #FFF;
+    position: relative;
+}
+
+.twitter .twitter-logo i:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    left: 38%;
+    border-width: 10px;
+    border-color: #0077B5 transparent transparent transparent;
+    border-style: solid;
+}
+
+.twitter .title {
+    margin: 15px 0;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.twitter .item p:first-child {
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.twitter .item p:last-child {
+    color: #0077B5;
+}
+
+.twitter a.left {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    color: #FFF;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.twitter a.right {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    color: #FFF;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.twitter a.twitter-carousel-control .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #FFF;
+}
+
+
+/********************************
+        End Twitter Css
+*********************************/
+
+
+/********************************
+        Start Blog Css
+*********************************/
+
+.blog {
+    padding: 90px 0;
+}
+
+.blog .blog-title h2 {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.blog .blog-title h2~p {
+    margin-bottom: 60px;
+}
+
+.blog .blog-item {
+    margin-bottom: 20px;
+}
+
+.blog .blog-item .blog-photo {
+    position: relative;
+}
+
+.blog .blog-item .blog-photo span:nth-of-type(1) {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: #d9d9d9;
+}
+
+.blog .blog-item .blog-photo span:nth-of-type(2) {
+    position: absolute;
+    left: 100px;
+    bottom: 5px;
+    color: #d9d9d9;
+}
+
+.blog .blog-item .blog-photo span:nth-of-type(3) {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #FFF;
+}
+
+.blog .blog-item .blog-photo span:nth-of-type(3) i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #0077B5;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.blog .blog-item p:first-child {
+    font-size: 18px;
+    color: #0077B5;
+    margin-top: 30px;
+}
+
+.blog .blog-item h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 600;
+    position: relative;
+}
+
+.blog .blog-item h4:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 20px;
+    height: 5px;
+    background-color: #0077B5;
+}
+
+.blog button {
+    margin-top: 30px;
+}
+
+
+/********************************
+        End Blog Css
+*********************************/
+
+
+/********************************
+        Start Contact Css
+*********************************/
+
+.contact {
+    background: url(../img/contact-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.contact .contact-title h2 {
+    margin-bottom: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact .contact-title h2~p {
+    margin-bottom: 60px;
+    color: #FFF;
+}
+
+.contact form input {
+    margin-bottom: 20px;
+    padding: 25px 15px;
+    background-color: transparent;
+}
+
+.contact form textarea {
+    resize: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.contact .contact-info p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+.contact .contact-info h5 {
+    padding: 12px 0;
+    color: #FFF;
+}
+
+
+/********************************
+        End Contact Css
+*********************************/
+
+
+/********************************
+        Start Footer Css
+*********************************/
+
+.footer {
+    padding-top: 90px;
+    background: #0077B5;
+    overflow: hidden;
+}
+
+.footer .logo-bottom {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer ul {
+    margin: 20px 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.footer ul li a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.footer ul li:first-child:hover a {
+    background-color: #3b5999;
+}
+
+.footer ul li:nth-child(2):hover a {
+    background-color: #55acee;
+}
+
+.footer ul li:nth-child(3):hover a {
+    background-color: #ea4c89;
+}
+
+.footer ul li:nth-child(4):hover a {
+    background-color: #0077B5;
+}
+
+.footer ul li:last-child:hover a {
+    background-color: #f26522;
+}
+
+.footer .copyright {
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.footer .copyright h5 {
+    color: #0077B5;
+    font-size: 16px;
+}
+
+.footer .copyright .right {
+    text-align: right;
+}
+
+.footer .copyright .left {
+    text-align: left;
+}
